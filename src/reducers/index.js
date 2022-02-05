@@ -1,4 +1,5 @@
 // Reducers 정의
+import { act } from 'react-dom/cjs/react-dom-test-utils.production.min';
 import { combineReducers } from 'redux';
 
 // Reducer 1) 곡 리스트 리턴
@@ -14,7 +15,7 @@ const songsReducer = () => {
 
 // Reducer 2) 선택된 곡 리턴
 const selectedSongReducer = (selectedSong = null, action) => {  // 기존에 선택된 곡은 default 값을 null 셋팅
-  if (action === 'SONG_SELECTED') {
+  if (action.type === 'SONG_SELECTED') {
     return action.payload;
   }
   return selectedSong;
