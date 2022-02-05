@@ -1,4 +1,5 @@
 // Reducers 정의
+import { combineReducers } from 'redux';
 
 // Reducer 1) 곡 리스트 리턴
 const songsReducer = () => {
@@ -18,3 +19,9 @@ const selectedSongReducer = (selectedSong = null, action) => {  // 기존에 선
   }
   return selectedSong;
 }
+
+
+export default combineReducers({
+  songs: songsReducer,
+  selectedSong: selectedSongReducer
+});
