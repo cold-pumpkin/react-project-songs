@@ -1,8 +1,16 @@
 import React from 'react';
-import { selectSongs } from '../actions';  // named export 인 경우 {...} & index.js 생략 가능
+import SongList from './SongList';
 
 const App = () => {
-  return <div>App!!</div>
+  return (
+    <div className='ui container grid'>
+      <div className='ui row'>
+        <div className='column eight wide'>
+          <SongList />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default App;

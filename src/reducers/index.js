@@ -7,7 +7,7 @@ const songsReducer = () => {
     { title: '12:45(Stripped)', duration: '3:00' },
     { title: 'abcdefu', duration: '2:49' },
     { title: 'Levitating', duration: '3:24' },
-    { title: 'Levitating', duration: '3:24' },
+    { title: 'DM', duration: '3:24' },
     { title: 'Hush Hush', duration: '3:04' },
   ];
 };
