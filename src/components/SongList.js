@@ -38,5 +38,5 @@ const mapStateToProps = (state) => {
 // action creator Object key-value 같은 경우 하나로 생각 가능 (ES6)
 export default connect(
   mapStateToProps, 
-  { selectSong }  // -> props.selectSong() 호출할 때마다 dispatch 해줌
+  { selectSong }  // {Action Creators} -> props.selectSong() 호출할 때마다 dispatch 해줌
 )(SongList);  
